@@ -1,0 +1,140 @@
+.wrap{
+    padding:100px 200px;
+    max-width: 100vw;
+    margin: auto;
+    background: linear-gradient(0deg, #F7F9F9 0%, rgba(247, 249, 249, 0.00) 49.93%);
+}
+.icons-container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    justify-content: space-between;
+}
+.icons-container .icon{
+    color: red;
+    fill: red;
+    background-color: red;
+}
+.line-icon{
+    height: 4px;
+    border: none;
+    margin: 0;
+    background-color: #0059fd;
+    opacity: 1;
+}
+.product-image {
+    width: fit-content;
+    height: 400px;
+    object-fit: cover;
+}
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail {
+    margin-top: 8px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+}
+.deposit-btn {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    color: #fff;
+    background-color: #347aeb;
+    border: 1px solid #347aeb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.deposit-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.deposit-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: all .35s;
+}
+
+.deposit-btn:hover {
+    color: #347aeb;
+}
+
+.deposit-btn:hover:after {
+    animation: bounceX 0.5s ease;
+    width: 100%;
+}
+
+.desc-btn {
+    display: flex;
+    width: 200px;;
+    padding: 10px;
+    color: #347aeb;
+    background-color: #fff;
+    border: 1px solid #347aeb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.desc-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.desc-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #347aeb;
+    transition: all .35s;
+}
+
+.desc-btn:hover {
+    color: #fff;
+}
+
+.desc-btn:hover:after {
+    animation: bounceX 0.5s ease;
+    width: 100%;
+}
+@keyframes bounceX{
+    0%{
+        width: 0%;
+    }
+    60%{
+        width: 100%;
+    }
+    80%{
+        width: 95%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+/* .swiper-button-prev{
+
+}
+.swiper-button-next{
+    
+} */

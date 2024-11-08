@@ -1,0 +1,96 @@
+.wrap{
+    align-content: center;
+    min-height: 600px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+.container{
+    display: flex;
+    margin: auto;
+    background: url("https://vinfastauto.com/themes/porto/img/homepage-v2/green-tree.webp") no-repeat scroll center center;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 450px;
+    max-width: 1500px;
+}
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.desc, .detail {
+    text-align: justify;
+    font-size: medium;
+}
+.detail {
+    margin-top: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.future-green-content-card {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    text-align: left;
+}
+.schedule-btn {
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    color: #fff;
+    background-color: #347aeb;
+    border: 1px solid #347aeb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.schedule-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.schedule-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: all .35s;
+}
+
+.schedule-btn:hover {
+    color: #347aeb;
+}
+
+.schedule-btn:hover:after {
+    animation: bounceX 0.5s ease;
+    width: 100%;
+}
+
+@keyframes bounceX{
+    0%{
+        width: 0%;
+    }
+    60%{
+        width: 100%;
+    }
+    80%{
+        width: 95%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@media (min-witdh:1200px) {
+    .container{
+        max-width: 1440px;
+    }
+}

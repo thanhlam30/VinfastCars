@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --main-color: #228b22;
+    --text-color: #333333;
+    /* --font-base: 'Roboto', sans-serif;
+    --font-base-bold: 'Roboto-bold', sans-serif; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--text-primary);
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color: var(--text-color);
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 2px;
+}
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+    background: #0077be;
+    border-radius:3px;
+}
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--text-color);
+}
+

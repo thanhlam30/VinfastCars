@@ -1,0 +1,124 @@
+.wrap{
+    height: 700px;
+    background: url("https://vinfastauto.com/themes/porto/img/homepage-v2/service.webp") no-repeat scroll right center transparent;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.service-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: none;
+    border: none;
+    text-align: left;
+}
+.title{
+    font-weight: 500;
+    font-size: 24px;
+}
+.desc{
+    text-align: justify;
+    font-size: medium;
+}
+.detail {
+    margin-top: 8px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.schedule-btn {
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    color: #fff;
+    background-color: #347aeb;
+    border: 1px solid #347aeb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.schedule-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.schedule-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: all .35s;
+}
+
+.schedule-btn:hover {
+    color: #347aeb;
+}
+
+.schedule-btn:hover:after {
+    animation: bounceX 0.5s ease;
+    width: 100%;
+}
+
+.privacy-btn {
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    color: #347aeb;
+    background-color: #fff;
+    border: 1px solid #347aeb;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.privacy-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.privacy-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #347aeb;
+    transition: all .35s;
+}
+
+.privacy-btn:hover {
+    color: #fff;
+}
+
+.privacy-btn:hover:after {
+    animation: bounceX 0.5s ease;
+    width: 100%;
+}
+@keyframes bounceX{
+    0%{
+        width: 0%;
+    }
+    60%{
+        width: 100%;
+    }
+    80%{
+        width: 95%;
+    }
+    100%{
+        width: 100%;
+    }
+}

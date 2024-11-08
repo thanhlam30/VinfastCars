@@ -1,0 +1,173 @@
+.logo {
+    justify-items: left;
+    padding: 10px;
+}
+
+.info {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.info p {
+    margin-bottom: 18px;
+}
+
+.info div {
+    margin-bottom: 10px;
+}
+
+.ecosystem {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.ecosystem .menu-title{
+    font-size: 14px;
+    font-weight:600;
+}
+.ecosystem li{
+    position: relative;
+}
+.ecosystem li a{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.ecosystem li a:hover {
+    transition: all 0.3s ease;
+    color: #1464f4;
+}
+
+.ecosystem li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #1464f4;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.ecosystem li a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.menu-footer {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+.menu-footer a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    height: 1px;
+    background-color: #1464f4;
+    transition: 0.3s ease, left 0.3s ease;
+}
+.menu-footer a:hover{
+    color: #1464f4;
+}
+.menu-footer a:hover::after{
+    left: 0;
+    width: 100%;
+}
+.news,
+.privacy {
+    display: flex;
+}
+
+.chervon-down {
+    background: url("https://storage.googleapis.com/vinfast-data-01/caret-down.svg") no-repeat center center;
+    width: 16px;
+    height: 16px;
+    padding: 12px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.submenu-news {
+    position: absolute;
+    margin: 100px 0 0 100px;
+    background-color: #fff;
+    box-shadow: 0px 24px 54px rgb(0 0 0 / 10%);
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.submenu-privacy {
+    position: absolute;
+    margin: 50px 0px 0px 100px;
+    background-color: #fff;
+    box-shadow: 0px 24px 54px rgb(0 0 0 / 10%);
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.submenu-news ul,
+.submenu-privacy ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.submenu-news ul li a,
+.submenu-privacy ul li a{
+    position: relative;
+}
+.submenu-news ul li a:hover,
+.submenu-privacy ul li a:hover{
+    transition: all 0.3s ease;
+    color: #1464f4;
+}
+.submenu-news ul li a::after,
+.submenu-privacy ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #1464f4;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.submenu-news li a:hover::after,
+.submenu-privacy li a:hover::after{
+    left: 0;
+    width: 100%;
+}
+.customer-care{
+    padding: 0 10px 10px 10px;
+    text-align: left;
+}
+.hotline-email{
+    padding: 10px 0 10px 0;
+}
+.hotline, .email{
+    margin: 10px 0 10px 0;
+}
+.hotline-email span{
+    margin-left: 10px;
+    color: #1464f4;
+}
+.social{
+    margin-top: 10px;
+}
+.social-item{
+    padding: 5px 10px 0 0;
+}
